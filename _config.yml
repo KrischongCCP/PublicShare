@@ -1,0 +1,29 @@
+# Jekyll Configuration for GitHub Pages
+title: Share Hub
+description: Secure Document Sharing Portal
+baseurl: "/sharehub" # Required for GitHub Pages project site deployment
+url: "" # Will be dynamically determined
+
+# Build settings
+markdown: kramdown
+# theme: minima  # Commented out - using custom layouts instead
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Default layout for all documents
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "universal"
